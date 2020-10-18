@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task12</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            font-family: 黑体;
+            font-size: 16px;
+        }
+
+        th {
+            width: 80px;
+            text-align: center;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .grey {
+            background-color: rgb(204, 204, 204);
+        }
+
+        .search {
+            border: solid grey;
+            width: 170px;
+            height: 20px;
+        }
+
+        .search:hover {
+            width: 170px;
+            height: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 2px 3px blue
+        }
+/*轮图这个真的没做出来，时间太紧了，css3还没学会，做不来，很多地方无从下手，网上参考的代码实现起来也很奇怪，自从9月末开始每天都在熬夜学前端、肝任务，结果还是任务九没做，
+最后的任务十二最后一天才开始学+做，实现过程中也因为对这方面知识掌握不好出各种问题，前两问还好，轮图实在是太难了....
+这问的同时实现自动轮播和手动轮播感觉好迷，用了checkbox、lable、选择器，结果勾选后没有任何变化，重新加了div也是，还是只有自动轮播，然而在banner前后加div后轮图就不见了，
+轮完一遍后图片会返回，时间间隙也不对....等等各种问题，时间太紧就先提交了，之后会继续修改的，请忽视第三问吧....
+因为是参考的网上代码进行的修改，还是对这轮图代码不够了解，只懂表面不懂精髓吧，之后还是会继续学习这方面修改过来这方面重新上传的*/
+        .check1:checked~.banner_check {
+            background-color: rgb(247, 167, 156);
+            display: none;
+        }
+
+        .check2:checked~.banner_check {
+            background-color: rgb(247, 240, 156);
+            display: none;
+        }
+
+        .check3:checked~.banner_check {
+            background-color: rgb(97, 243, 228);
+            display: none;
+        }
+
+        .banner_check {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+        }
+
+        .banner {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .img-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 500%;
+            height: 100%;
+            font-size: 0;
+
+            -webkit-transform: translate(-80%, 0);
+            -moz-transform: translate(-80%, 0);
+            -ms-transform: translate(-80%, 0);
+            -o-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+
+            animation: loop 15S linear infinite;
+        }
+
+        @keyframes loop {
+            0% {
+                transform: translate(-80%, 0);
+            }
+
+            15% {
+                transform: translate(-80%, 0);
+            }
+
+            20% {
+                transform: translate(-60%, 0);
+            }
+
+            35% {
+                transform: translate(-60%, 0);
+            }
+
+            40% {
+                transform: translate(-40%, 0);
+            }
+
+            55% {
+                transform: translate(-40%, 0);
+            }
+
+            60% {
+                transform: translate(-20%, 0);
+            }
+
+            75% {
+                transform: translate(-20%, 0);
+            }
+
+            80% {
+                transform: translate(0, 0);
+            }
+
+            95% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-80%, 0);
+            }
+
+        }
+
+        .imgs {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr style="background-color: black;color: #ffffff;font-family: 黑体;">
+            <th>排名</th>
+            <th>网站</th>
+            <th>热度</th>
+        </tr>
+        <tr class="red">
+            <td>1</td>
+            <td>前端学院</td>
+            <td>13000</td>
+        </tr>
+        <tr class="red grey">
+            <td>2</td>
+            <td>前端学院</td>
+            <td>12000</td>
+        </tr>
+        <tr class="red">
+            <td>3</td>
+            <td>前端学院</td>
+            <td>11000</td>
+        </tr>
+        <tr class="grey">
+            <td>4</td>
+            <td>前端学院</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="red">前端学院</td>
+            <td>9000</td>
+        </tr>
+        <tr class="grey">
+            <td>6</td>
+            <td>前端学院</td>
+            <td>8000</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="red">前端学院</td>
+            <td>7000</td>
+        </tr>
+        <tr class="grey">
+            <td>8</td>
+            <td>前端学院</td>
+            <td>6000</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td class="red">前端学院</td>
+            <td>5000</td>
+        </tr>
+        <tr class="grey">
+            <td>10</td>
+            <td>前端学院</td>
+            <td>4000</td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <div class="search">
+        <input type="text" name="" id="" value="" />
+    </div>
+    <br><br><br><br>
+    <div style="display: none;">
+        <input type="checkbox" id="check1">
+        <input type="checkbox" id="check2">
+        <input type="checkbox" id="check3">
+    </div>
+    <label for="check1" style="width: 20px;height: 20px;background-color: gray;border: black 1px solid;color: #fff;font-size: 20px;">&nbsp;1&nbsp;</label>
+    <label for="check2" style="width: 20px;height: 20px;background-color: gray;border: black 1px solid;color: #fff;font-size: 20px;">&nbsp;2&nbsp;</label>
+    <label for="check3" style="width: 20px;height: 20px;background-color: gray;border: black 1px solid;color: #fff;font-size: 20px;">&nbsp;3&nbsp;</label>
+    <div class="banner">
+        <div class="img-container">
+            <img src="imgs/01.png" class="imgs">
+            <img src="imgs/02.png" class="imgs">
+            <img src="imgs/03.png" class="imgs">
+        </div>
+    </div>
+    <div class="banner_check"></div>
+</body>
+
+</html>

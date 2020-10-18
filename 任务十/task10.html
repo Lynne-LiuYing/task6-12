@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+        }
+
+        .all li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 20px;
+            width: 200px;
+            list-style: none;
+        }
+
+        .A {
+            height: 120px;
+            border: #f00 solid 1px;
+        }
+
+        .B {
+            height: 100px;
+            border: #f00 solid 1px;
+        }
+
+        .C {
+            height: 20px;
+            border: #f00 solid 1px;
+        }
+
+        .D {
+            height: 200px;
+            border: blue solid 1px;
+        }
+
+        @media (min-width: 640px) {
+            .all {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .all li {
+                align-self: center;
+                flex-direction: row;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .D{margin-right: auto;}
+            .all {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap
+            }
+
+            .all li {
+                flex-direction: row;
+            }
+            .D:nth-child(4) {
+  	order:-3;
+  }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="all">
+        <li class="A"></li>
+        <li class="B"></li>
+        <li class="C"></li>
+        <li class="D"></li>
+    </ul>
+</body>
+
+</html>

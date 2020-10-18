@@ -1,0 +1,270 @@
+/*task11*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: rgb(187, 11, 29);
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+}
+
+header a {
+    position: absolute;
+    top: 10px;
+}
+
+header a:link {
+    color: #ffffff;
+}
+
+header a:visited {
+    color: #BB9296;
+}
+
+header h3 {
+    text-align: center;
+    position: relative;
+    top: 7px;
+}
+
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    height: 30px;
+}
+
+nav li {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+    left: 30px;
+    width: 15%;
+    font-family: 黑体;
+}
+
+nav a:link {
+    color: c;
+}
+
+nav a:visited {
+    color: #BB424F;
+}
+
+.pic1 {
+    width: 100%;
+}
+
+.pic1 img {
+    width: 100%;
+    height: 210px;
+}
+
+.tag-basketball {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.tag-basketball li {
+    width: 20%;
+    display: inline-block;
+    margin-right: -5px;
+    color: rgb(187, 11, 29);
+}
+
+.tag-basketball li img {
+    width: 65px;
+    height: 65px;
+}
+
+.tag-basketball li h4 {
+    position: relative;
+    left: 5px;
+}
+
+.tag-basketball li a {
+    display: block;
+    width: 100%;
+    height: 70px;
+    font: 14px/40px 'microsoft yahei';
+    text-align: center;
+    text-decoration: none;
+}
+
+.team {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.tag {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.tag img {
+    width: 60px;
+    height: 60px;
+}
+
+.tag li {
+    width: 20%;
+    display: inline-block;
+    margin-right: -5px;
+    color: rgb(187, 11, 29);
+}
+
+.tag li img {
+    width: 65px;
+    height: 65px;
+}
+
+.tag li h4 {
+    position: relative;
+    left: 5px;
+}
+
+.tag li a {
+    display: block;
+    width: 100%;
+    height: 70px;
+    font: 14px/40px 'microsoft yahei';
+    text-align: center;
+    text-decoration: none;
+}
+
+.col {
+    position: relative;
+    top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.col div {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+}
+
+.col img {
+    width: 100px;
+    height: 80px;
+}
+
+.col h3 {
+    font: bolder 14px 'microsoft';
+    color: #5a5b5b;
+}
+
+.col1,
+.col2 {
+    border-right: 2px solid rgb(187, 11, 29);
+}
+
+.col h5 {
+    font: bolder 12px 'microsoft';
+    color: #5a5b5b;
+    margin-top: 5px;
+}
+
+.col1,
+.col2,
+.col3 {
+    width: 33%;
+}
+
+.modular_1 h3 {
+    font: bolder 18px 'microsoft';
+    color: #5a5b5b;
+    padding: 8px 4%;
+    margin-left: -10px;
+}
+
+.m_c_pic1 {
+    float: left;
+    margin-left: 8px;
+}
+
+.m_c_pic2 {
+    float: left;
+    margin-left: 8px;
+}
+
+.m_c {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.m_c_item {
+    display: inline-block;
+    width: 42%;
+    margin-bottom: 8px;
+    margin-left: 14px;
+    border-radius: 4px;
+    padding: 7px 0;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+.m_c_item a {
+    font-family: 黑体;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.m_c_item a:link {
+    color: rgb(187, 11, 29);
+}
+
+.m_c_item a:visited {
+    color: #5a5b5b;
+}
+
+.article_2,
+.article_1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.article_3 {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: 8px;
+}
+
+.art_img {
+    float: left;
+    width: 30%;
+}
+
+.article_3 small,
+.article_2 small,
+.article_1 small {
+    position: relative;
+    bottom: -10px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.art_pa {
+    margin-right: 4px;
+}
+
+.art_img {
+    margin-left: 8px;
+}

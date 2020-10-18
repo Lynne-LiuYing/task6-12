@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>task8</title>
+</head>
+<style>
+    * 
+    {
+        outline: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .fence 
+    {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .outer 
+    {
+        box-sizing: border-box;
+        padding: 10px;
+        float: left;
+    }
+
+    .inner 
+    {
+        background: #eee;
+        border: 1px solid gray;
+        height: 50px;
+    }
+
+    @media (min-width: 768px) 
+    {
+        .outer-dy-4 {width: 33.33%;}
+        .outer-dy-3 {width: 25%;}
+        .outer-dy-6 {width: 50%;}
+        .outer-dy-1 {width: 8.33%;}
+        .outer-dy-2 { width: 16.67%;}
+    }
+
+    @media (max-width: 768px) 
+    {
+        .outer-xy-6 {width: 50%;}
+        .outer-xy-12 {width: 100%;}
+        .outer-xy-3 {width: 25%;}
+        .outer-xy-2 {width: 16.67%;}
+        .outer-xy-8 {width: 66.67%;}
+    }
+</style>
+
+<body>
+    <div class="fence">
+        <div class="outer outer-dy-4 outer-xy-6">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-4 outer-xy-6">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-4 outer-xy-12">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-3 outer-xy-3">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-6 outer-xy-6">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-3 outer-xy-3">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-1 outer-xy-2">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-1 outer-xy-2">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-2 outer-xy-8">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-2 outer-xy-3">
+            <div class="inner"></div>
+        </div>
+        <div class="outer outer-dy-6 outer-xy-3">
+            <div class="inner"></div>
+        </div>
+    </div>
+</body>
+
+</html>
